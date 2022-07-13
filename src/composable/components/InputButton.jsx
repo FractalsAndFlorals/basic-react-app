@@ -5,7 +5,7 @@ import useLocalStorage from "../../hooks/useLocalStorage";
 const InputButton=(props)=>{
 
     const inputValue = props.inputValue || "";
-    const [storedValue, setStoredValue, setLocalStorageValue] = useLocalStorage('input', []);
+    const [storedValue,, setLocalStorageValue] = useLocalStorage('input', []);
 
 
     const useInputButton=()=>{

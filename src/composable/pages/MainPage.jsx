@@ -7,7 +7,7 @@ import useLocalStorage from "../../hooks/useLocalStorage";
 const MainPage = () => {
 
     const [input, setInput] = useState('');
-    const [storedValue, setStoredValue, setLocalStorageValue, getLocalStorageValue] = useLocalStorage('input', []);
+    const [storedValue, setStoredValue,, getLocalStorageValue] = useLocalStorage('input', []);
 
     const taskList = []
     storedValue.forEach(task => {
